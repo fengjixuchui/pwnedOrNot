@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/xgaojFM.png"></p>
+<p align="center"><img src="https://i.imgur.com/ojjMbWX.jpg"></p>
 
 <h4 align="center">OSINT Tool for Finding Passwords of Compromised Email Accounts</h4>
 
@@ -40,9 +40,8 @@ pwnedOrNot uses [**haveibeenpwned**](https://haveibeenpwned.com/API/v3) v3 api t
 And with all this information **pwnedOrNot** can easily find passwords for compromised emails if the dump is accessible and it contains the password
 
 #### Tested on
-* **Kali Linux 2019.1**
+* **Kali Linux**
 * **BlackArch Linux**
-* **Ubuntu 18.04**
 * **Kali Nethunter**
 * **Termux**
 
@@ -59,6 +58,14 @@ pip3 install requests
 
 ```bash
 pacman -S pwnedornot
+```
+
+**Docker**
+
+```bash
+docker pull thewhiteh4t/pwnedornot
+docker create -it --name pon thewhiteh4t/pwnedornot
+docker start pon -i
 ```
 
 ## Updates
